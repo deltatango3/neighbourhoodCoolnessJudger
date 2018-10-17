@@ -69,38 +69,6 @@ export const getLibraries = (lat, lng) => {
   });
 };
 
-// export const getConcerts = (lat,lng) => {
-//   return axios({
-//     url: 'https://proxy.hackeryou.com',
-//     method: 'GET',
-//     dataResponse: 'json',
-//     paramsSerializer: function (params) {
-//       return Qs.stringify(params, {
-//         arrayFormat: 'brackets'
-//       })
-//     },
-//     params: {
-//       reqUrl: 'https://app.ticketmaster.com/discovery/v2/events.json',
-//       params: {
-//         latlong: `${lat},${lng}`,
-//         radius: 4,
-//         unit: 'km',
-//         startDateTime: startDateTime,
-//         endDateTime: endDateTime,
-//         sort: 'date,asc',
-//         size: 200,
-//         page: 0,
-//         classificationName: 'music',
-//         apikey: ticketMasterApi,
-//       },
-//       proxyHeaders: {
-//         'header_params': 'value'
-//       },
-//       xmlToJSON: false
-//     }
-//   })
-// }
-
 export const getConcerts = (lat, lng, i = 0) => {
   return axios({
     url: "https://proxy.hackeryou.com",
